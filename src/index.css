@@ -107,8 +107,17 @@ code {
 
 #content{
   height: 233px;
-  margin-top: 89px;
+  margin-top: 120px;
   text-align: -webkit-center;
+}
+
+#Search {
+  font-size: 20px;
+  padding: 0 8px;
+}
+
+#Search svg {
+  vertical-align: middle;
 }
 
 #voiceSearch {
@@ -119,7 +128,32 @@ code {
   vertical-align: middle;
 }
 
-  /* Getting the footer to the bottom via the below two lines */
+/* =======
+language section
+======== */
+.lang {
+  color: black;
+  display: inline-block;
+  padding: 0 2px;
+  font-family: arial, sans-serif;
+  font-size: 13px;
+}
+
+.lang a:nth-child(1) {
+  margin-left: 5px;
+}
+
+.lang a {
+  color: green;
+  text-decoration: none;
+  padding: 0 5px;
+}
+
+.lang a:hover {
+  text-decoration: underline;
+}
+
+/* Getting the footer to the bottom via the below two lines */
 #footer {
   position: absolute; 
   bottom: 0px;
@@ -183,6 +217,10 @@ a:visited {
   cursor: pointer;
 }
 
+input::placeholder{
+  text-align: center;
+}
+
 .searchBorder {
   display: flex;
   background: #fff;
@@ -224,7 +262,6 @@ a:visited {
   width: 487px;
   z-index: 0;
 }
-
 
 .searchButton {
   height: 36px;

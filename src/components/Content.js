@@ -1,4 +1,5 @@
 import { useState } from "react";
+import {HiOutlineSearch} from "react-icons/hi";
 
 const Content = () => {
     const [searchValue, setSearchValue] = useState("")
@@ -16,7 +17,10 @@ const Content = () => {
             <form>
                 <div className="searchBorder">
                     <div id="sideSeparation">
-                        <input className="searchBar" type="text" value={searchValue} onChange={onSearchChange} name="q" maxLength="100" />
+                        <div id="Search">
+                            <HiOutlineSearch />
+                        </div>
+                        <input className="searchBar" type="text" value={searchValue} placeholder="Search Side hustle or type a URL" onChange={onSearchChange} name="q" maxLength="100" />
                         <div id="voiceInputCont" aria-label="Search by voice">
                             <span id="voiceSearch"></span>
                         </div>
@@ -27,6 +31,13 @@ const Content = () => {
                     <input className="searchButton" type="button" value="I'm feeling lucky" />
                 </div>
             </form>
+
+            <div class="lang">
+                Google offered in:
+                    <a href="#">Hausa</a> <a href="#">Igbo</a>
+                    <a href="#">Ede Yoruba</a>
+                    <a href="#">Nigerian Pidgin</a>
+            </div>
         </div>
     )
 }
